@@ -1,15 +1,15 @@
 #include "lib.h"
 
-void init(char mat[][20]){
-    for(int i=0; i<10; i++){
+void init(char mat[][20], int dim){
+    for(int i=0; i<dim; i++){
         for(int j=0; j<20; j++){
             mat[i][j]=0;
         }
     }
 }
 
-void init(char ar[20]){
-    for(int i=0; i<20; i++){
+void init(char ar[], int dim){
+    for(int i=0; i<dim; i++){
         ar[i]=0;
     }
 }
