@@ -7,7 +7,7 @@ int main() {
     char elenco_nomi[10][20];
     char nomi[20];
     init(elenco_nomi, 10);
-    init(nomi);
+    init(nomi,20);
     int a;
 
    for (int i=0; i<10; i++){
