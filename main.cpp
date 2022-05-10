@@ -5,23 +5,20 @@ using namespace std;
 
 int main() {
     char elenco_nomi[10][20];
-    char inserimento_nomi[20];
+    char nomi[20];
     init(elenco_nomi, 10);
-    init(inserimento_nomi);
+    init(nomi);
     int a;
 
-    for(int i=0; i<20; i++){
-        init(inserimento_nomi);
-        cin >> inserimento_nomi;
-        for(int j=0; j<10; j++){
-            elenco_nomi[j][i] = inserimento_nomi[j];
-        }
+   for (int i=0; i<10; i++){
+        cin >> elenco_nomi[i];
     }
-    a = ricerca_nomi(elenco_nomi, inserimento_nomi);
-    if (a != -1) {
-        cout << a;
+    cin>> nome;
+    a= ricerca_nomi(elenco_nomi, nomi);
+    if (a==-1){
+        cout<<"non presente"<<endl;
     } else {
-        cout << "non presente" << endl;
+        cout << a << endl;
     }
     return 0;
 }
