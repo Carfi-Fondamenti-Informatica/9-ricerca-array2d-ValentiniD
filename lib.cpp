@@ -24,11 +24,12 @@ int ricerca_nomi(char elenco_nomi[10][20], char inserimento_nomi[20]){
         for(int j=0; j<20; j++){
             if(elenco_nomi[i][j]==inserimento_nomi[j]){
                 a++;
+            }else if(a==20){
+                return i;
             }else{
                 break;
             }
         }
-    }if(a==20){
-        return i;
     }
+    return -1;
 }
