@@ -3,21 +3,21 @@
 
 using namespace std;
 
-int main() {
+int main(){
     char elenco_nomi[10][20];
     char nomi[20];
+    
     init(elenco_nomi, 10);
-    init(nomi,20);
-    int a;
+    init(nomi, 20);
 
    for (int i=0; i<10; i++){
         cin >> elenco_nomi[i];
     }
-    cin>> nome;
-    a= ricerca_nomi(elenco_nomi, nomi);
-    if (a==-1){
+    cin >> nome;
+    int a= ricerca_nomi(elenco_nomi, nomi);
+    if(a==-1){
         cout<<"non presente"<<endl;
-    } else {
+    }else{
         cout << a << endl;
     }
     return 0;
