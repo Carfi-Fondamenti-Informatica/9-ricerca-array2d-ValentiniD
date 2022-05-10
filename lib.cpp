@@ -1,17 +1,14 @@
-//
-// Created by gasta on 10/05/2022.
-//
-
 #include "lib.h"
 
-char init(char mat[][20]){
+void init(char mat[][20]){
     for(int i=0; i<10; i++){
         for(int j=0; j<20; j++){
             mat[i][j]=0;
         }
     }
 }
-char init(char ar[20]){
+
+void init(char ar[20]){
     for(int i=0; i<20; i++){
         ar[i]=0;
     }
