@@ -13,7 +13,7 @@ int main(){
    for (int i=0; i<10; i++){
         cin >> elenco_nomi[i];
     }
-    cin >> nome;
+    cin >> nomi;
     int a= ricerca_nomi(elenco_nomi, nomi);
     if(a==-1){
         cout<<"non presente"<<endl;
