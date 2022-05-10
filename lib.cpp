@@ -14,12 +14,12 @@ void init(char ar[], int dim){
     }
 }
 
-int ricerca_nomi(char elenco_nomi[10][20], char inserimento_nomi[20]){
-    int a=0;
+int ricerca_nomi(char elenco_nomi[10][20], char nomi[20]){
+    int a;
     for(int i=0; i<10; i++){
         a=0;
         for(int j=0; j<20; j++){
-            if(elenco_nomi[i][j]==inserimento_nomi[j]){
+            if(elenco_nomi[i][j]==nomi[j]){
                 a++;
             }else if(a==20){
                 return i;
